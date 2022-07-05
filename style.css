@@ -8,4 +8,145 @@ ol,ul{
 a{
     text-decoration: none;
 }
+body{
+    font-family: 'Inter';
+}
 
+/*======== Banner part start =========*/
+#banner{
+    position:relative;
+    background: url(images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top:165px;
+    padding-bottom: 175px;
+    margin-bottom: 130px;
+}
+#banner::after{
+    content: '';
+    position:absolute;
+    background: rgb(0 0 0 / 44%);
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 100%; 
+}
+.container{
+    width:1140px;
+    margin: 0 auto;
+}
+.banner-part {
+    position: relative;
+    z-index:9999;
+    text-align: center;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.banner-part h1{
+    font-family: 'Inter';
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 79px;
+    text-align: center;
+    
+}
+.banner-part h1 span{
+    color:orange;
+}
+.banner-part p {
+    font-family: 'Poppins';
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #e1e1e1;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.banner-part a {
+    font-family: 'Poppins';
+    padding: 15px 35px;
+    background: #FFA500;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 10px;
+}
+/*======== Donate today part start =========*/
+
+.donate-part{
+    text-align: center;
+}
+.donate-text h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: #121212;
+}
+.donate-text p {
+    padding: 15px 270px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #3e3e3e;
+    margin-bottom: 50px;
+}
+
+.money-part {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-top:50px;
+    height: 190px;
+}
+.money-part h1 {
+    color: #707070;
+    padding: 35px 20px;
+    margin-bottom: 60px;
+    transition: all linear .3s;
+    font-size: 42px;
+}
+.money-part h1:hover {
+    border: 4px solid #FFA500;
+    background: #fde8e8;
+    cursor: pointer;
+}
+.input-part {
+    padding-bottom: 5px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.input-part::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border: 2px solid #c7c7c7;
+    width: 89%;
+    left: 65px;
+}
+.input-part input {
+    font-size: 30px;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+.input-part placeholder{
+    color:#121212;
+}
+.donate-button{
+    margin-bottom: 130px;
+}
+
+
+
+
+/*======== Banner part start =========*/

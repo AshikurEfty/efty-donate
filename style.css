@@ -126,7 +126,7 @@ body{
     content: '';
     position: absolute;
     bottom: 0;
-    border: 2px solid #c7c7c7;
+    border: 1px solid #c7c7c7;
     width: 89%;
     left: 65px;
 }
@@ -225,6 +225,93 @@ body{
     margin-left: 50px;
     height: 100%;
 }
+/*======= place part start ======= */
+
+#place-main{
+    margin-bottom:100px;
+}
+.place-text {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.place-text h1{
+    font-size: 42px;
+    font-family: 'poppins';
+    font-weight: 700;
+    padding-top:20px;
+    padding-bottom: 15px;
+}
+.place-text p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #3e3e3e;
+    margin-bottom: 30px;
+}
+.place-image-part{
+    display: flex;
+}
+.place-img1{
+    margin-left: 10px;
+    width:30%;
+    position:relative;
+    top:0;
+    left:0;
+}
+.overlay {
+    position: absolute;
+    background: linear-gradient(to bottom,rgba(41,53,65,0) 0,rgba(41,53,65,.8) 50%,#293541 100%);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57%;
+    transition: all linear .3s;
+    z-index: 9999;
+}
+.place-img1:hover .overlay{
+    height: 80%;
+}
+.overlay h1 {
+    text-align: center;
+    margin-top: 70px;
+    color: #FFFFFF;
+    padding-bottom: 14px;
+    font-size: 28px;
+}
+.overlay h2 {
+    text-align: center;
+    opacity:0;
+    transition: all linear .3s;
+}
+.overlay h2 a {
+    color: #FFFFFF;
+    font-size: 22px;
+    background: #FFA500;
+    padding: 10px 30px;
+    transition: all linear .3s;
+    border-radius: 10px;
+}
+.overlay h2 a:hover {
+    box-shadow: 0px 0px 15px #ffff;
+    border-radius: 20px 2px 20px 2px;
+}
+.place-img1 img {
+    width: 100%;
+    height: 270px;
+}
+.place-img1:hover h2 {
+    opacity: 1;
+    color: #FFFFFF;
+    font-size: 26px;
+    padding: 10px 13px;
+    border-radius: 10px;
+    transition: all linear .3s;
+}
+
+
 /*======= email part start ======= */
 #update-main{
     margin-bottom: 100px;
@@ -265,6 +352,7 @@ body{
     padding-bottom: 10px;
     padding-right: 20px;
     border-radius: 0px 20px 2px 20px;
+    cursor: pointer;
 }
 
 /* ========footer part start===== */
